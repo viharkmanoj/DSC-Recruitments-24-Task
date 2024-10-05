@@ -19,7 +19,6 @@ def peek():
         return user_stack[val]
 
 def againloop():
-    global again
     again = input("Do you want to add another value(y/n): ")
     if again in 'yY':
         again = 'y'
@@ -33,7 +32,6 @@ def againloop():
 def menu():
     print("\n1.Push\n2.Pop\n3.Peek\n4.Show stack\n5.Exit\n")
     selection = int(input("Choose an option : "))
-    global again
     if selection == 1:
         while again == 'y':
             to_push = eval(input("Enter the value which has to be pushed : "))
@@ -46,7 +44,6 @@ def menu():
         print("Executed.......")
         menu()
 
-
     elif selection == 3:
         peek_val = peek()
         print("\nThe value at the top ---->",peek_val)
@@ -58,8 +55,7 @@ def menu():
         print("Executed.......")
         menu()
 
-
     elif selection == 5:
-        exit 
+        exit()
 print("\n--------Design your own stack!--------")   
 menu()

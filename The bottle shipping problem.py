@@ -6,21 +6,21 @@ smallqty = 0
 res = ""
 
 #xl
-while(num_bottle>48):
+while(num_bottle>=48):
     num_bottle -= 48
     xlqty += 1
 else:
     res += "{} xl, ".format(xlqty)
 
 #large
-while(num_bottle>24):
+while(num_bottle>=24):
     num_bottle -= 24
     largeqty += 1 
 else:
-    res += "{} larege, ".format(largeqty)  
+    res += "{} large, ".format(largeqty)  
 
 #medium
-while(num_bottle>12):
+while(num_bottle>=12):
     num_bottle -= 12
     mediumqty += 1
 else: 
