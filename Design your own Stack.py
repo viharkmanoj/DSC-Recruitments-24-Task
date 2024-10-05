@@ -6,14 +6,14 @@ def push(x):
 
 def pop():
     if user_stack == []:
-        print("no value is in the stack to pop")
+        print("\nNo value is in the stack to pop")
     else:
         last_item = user_stack.pop()
         return last_item
 
 def peek():
     if user_stack == []:
-        print("No value is in the stack to peek")
+        print("\nNo value is in the stack to peek")
     else:
         val = len(user_stack)-1
         return user_stack[val]
