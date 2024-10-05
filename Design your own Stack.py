@@ -19,6 +19,7 @@ def peek():
         return user_stack[val]
 
 def againloop():
+    global again
     again = input("Do you want to add another value(y/n): ")
     if again in 'yY':
         again = 'y'
@@ -56,6 +57,7 @@ def menu():
         menu()
 
     elif selection == 5:
-        exit()
+        print("Exiting program...")
+        return
 print("\n--------Design your own stack!--------")   
 menu()
