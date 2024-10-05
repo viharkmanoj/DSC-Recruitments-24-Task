@@ -13,7 +13,7 @@ def pop():
 
 def peek():
     if user_stack == []:
-        print("No value is in the stach to peek")
+        print("No value is in the stack to peek")
     else:
         val = len(user_stack)-1
         return user_stack[val]
